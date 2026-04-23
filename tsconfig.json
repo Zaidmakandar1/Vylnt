@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@vylnt/types": ["extension/src/types/index.ts"],
+      "@vylnt/types/*": ["extension/src/types/*"],
+      "@vylnt/schemas": ["schemas/scan-report-v1-schema.ts"],
+      "@vylnt/schemas/*": ["schemas/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules",
+    "**/dist",
+    "schemas/generate-schema.ts"
+  ]
+}

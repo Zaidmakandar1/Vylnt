@@ -1,0 +1,1 @@
+{"version":3,"file":"resource-scope.d.ts","sourceRoot":"","sources":["../../src/utils/resource-scope.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,OAAO,EAAE,MAAM,mBAAmB,CAAC;AAUjD,wBAAgB,wBAAwB,CAAC,OAAO,EAAE,MAAM,EAAE,WAAW,EAAE,MAAM,GAAG,OAAO,CAYtF;AAED,wBAAgB,4BAA4B,CAAC,OAAO,EAAE,MAAM,EAAE,QAAQ,EAAE,OAAO,EAAE,GAAG,OAAO,EAAE,CAG5F"}

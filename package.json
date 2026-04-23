@@ -1,0 +1,25 @@
+{
+  "name": "vylnt-devguard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Vylnt DevGuard — multi-layered developer security platform",
+  "workspaces": [
+    "extension",
+    "api-server",
+    "dashboard",
+    "cicd",
+    "schemas"
+  ],
+  "scripts": {
+    "test": "npm run test --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "generate-schema": "npx tsx schemas/generate-schema.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "tsx": "^4.11.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

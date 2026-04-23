@@ -1,0 +1,31 @@
+{
+  "name": "@vylnt/api-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Vylnt DevGuard API server (Node.js/Express + PostgreSQL)",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "ajv": "^8.16.0",
+    "ajv-formats": "^3.0.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.12.12",
+    "@types/pg": "^8.11.6",
+    "fast-check": "^3.19.0",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}

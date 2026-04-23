@@ -1,0 +1,1 @@
+{"version":3,"file":"dom-patterns.d.ts","sourceRoot":"","sources":["../../src/scanner/dom-patterns.ts"],"names":[],"mappings":"AAAA;;;;GAIG;AAEH,OAAO,KAAK,EAAE,OAAO,EAAE,MAAM,mBAAmB,CAAC;AAYjD,MAAM,WAAW,UAAU;IACzB,4DAA4D;IAC5D,SAAS,EAAE,MAAM,CAAC;IAClB,0BAA0B;IAC1B,OAAO,EAAE,MAAM,CAAC;CACjB;AAwFD,wBAAgB,kBAAkB,CAAC,OAAO,EAAE,MAAM,EAAE,OAAO,EAAE,UAAU,EAAE,GAAG,OAAO,EAAE,CAkDpF"}

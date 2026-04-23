@@ -1,0 +1,15 @@
+{
+  "name": "@vylnt/schemas",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Vylnt DevGuard shared JSON Schema definitions",
+  "type": "module",
+  "scripts": {
+    "generate": "tsx generate-schema.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5"
+  }
+}

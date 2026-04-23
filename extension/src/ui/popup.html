@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevGuard</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <h1>DevGuard</h1>
+    <label class="toggle-label" for="scanning-toggle">
+      <span id="scanning-status">Scanning: On</span>
+      <input type="checkbox" id="scanning-toggle" checked />
+      <span class="toggle-slider"></span>
+    </label>
+  </header>
+
+  <section class="list-section">
+    <p class="hint" id="scan-summary">Findings captured: 0</p>
+    <ul id="findings-list" class="findings-list"></ul>
+  </section>
+
+  <section class="list-section">
+    <h2>Allowlist</h2>
+    <p class="hint">Restrict scanning to these URL patterns only.</p>
+    <ul id="allowlist" class="pattern-list"></ul>
+    <div class="add-row">
+      <input type="text" id="allowlist-input" placeholder="e.g. https://example.com/*" />
+      <button id="allowlist-add">Add</button>
+    </div>
+  </section>
+
+  <section class="list-section">
+    <h2>Blocklist</h2>
+    <p class="hint">Never scan these URL patterns.</p>
+    <ul id="blocklist" class="pattern-list"></ul>
+    <div class="add-row">
+      <input type="text" id="blocklist-input" placeholder="e.g. https://internal.corp/*" />
+      <button id="blocklist-add">Add</button>
+    </div>
+  </section>
+
+  <script type="module" src="../../dist/ui/popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Vylnt DevGuard",
+  "version": "0.1.0",
+  "description": "Passive security scanner for HTTP headers, cookies, mixed content, and DOM patterns.",
+  "background": {
+    "service_worker": "dist/background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "webRequest",
+    "storage",
+    "cookies",
+    "activeTab",
+    "tabs",
+    "scripting",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["dist/content-script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "side_panel": {
+    "default_path": "src/side-panel.html"
+  },
+  "action": {
+    "default_title": "Vylnt DevGuard"
+  }
+}
